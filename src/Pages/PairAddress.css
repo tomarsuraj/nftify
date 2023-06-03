@@ -1,0 +1,20 @@
+.PairAddressContainer {
+  flex: 16;
+  height: 100%;
+}
+
+.heading {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  display: flex;
+  align-items: center;
+
+  /* Cultured Grey */
+
+  color: #f7f9f9;
+}
