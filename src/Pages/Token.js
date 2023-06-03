@@ -12,7 +12,7 @@ const Token = () => {
       .then((response) => response.json())
       .then((json) => setData(json))
       .catch((error) => console.error(error));
-  }, []);
+  }, [val]);
 
   console.log(data, `https://api.dexscreener.com/latest/dex/tokens/${val}`);
   return (
