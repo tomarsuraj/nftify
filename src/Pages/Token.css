@@ -1,7 +1,7 @@
 .tokenContainer {
   flex: 16;
   height: 94vh;
-  overflow: scroll;
+
   overflow: scroll;
   scrollbar-width: none;
   /* Firefox */

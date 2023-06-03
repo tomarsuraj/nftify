@@ -6,13 +6,15 @@ import DisplayPairs from "../Components/DisplayPairs";
 const Token = () => {
   const [data, setData] = useState({});
   const [val, setVal] = useState("");
+
   useEffect(() => {
-    fetch(`https://api.dexscreener.com/latest/dex/tokens/:${val}`)
+    fetch(`https://api.dexscreener.com/latest/dex/tokens/${val}`)
       .then((response) => response.json())
       .then((json) => setData(json))
       .catch((error) => console.error(error));
   }, []);
 
+  console.log(data, `https://api.dexscreener.com/latest/dex/tokens/${val}`);
   return (
     <div className="tokenContainer">
       <TopBar val={val} setVal={setVal} />
